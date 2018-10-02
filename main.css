@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+
+    color: #404040;
+    font-family: "Book Antiqua", "Times New Roman", serif;
+    font-size: 1em;
+    min-height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 2.35em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    text-indent: 2em;
+}
+
+#header {
+    background: #303030;
+    color: #efefef;
+    font-size: 200%;
+    padding: 3em;
+    text-align: center;
+}
+
+#header h1 {
+    text-shadow: 5px 5px black;
+}
+
+@keyframes shake {
+    10%, 45% {
+        transform: translate3d(-1px, 2px, 0);
+        color: magenta;
+    }
+
+    20%, 80% {
+        transform: translate3d(3px, -2px, 0);
+        color: greenyellow;
+    }
+
+    42%, 54%, 29% {
+        transform: translate3d(2px, -2px, 0);
+        color: cyan;
+    }
+
+    95%, 42%, 34% {
+        transform: translate3d(-2px, 1px, 0);
+        color: red;
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 2px, 0);
+        color: white;
+    }
+
+    40%, 60% {
+        transform: translate3d(3px, 1px, 0);
+        color: blue;
+    }
+
+    12%, 73% {
+        transform: translate3d(2px, 2px, 0);
+        color: white;
+    }
+
+    32%, 69% {
+        transform: translate3d(2px, 1px, 0);
+        color: red;
+    }
+
+    31%, 15% {
+        transform: translate3d(3px, -1px, 0);
+        color: greenyellow;
+    }
+
+    43%, 58%, 67% {
+        transform: translate3d(2px, -2px, 0);
+        color: cyan;
+    }
+
+    91%, 45%, 39% {
+        transform: translate3d(-2px, 3px, 0);
+        color: red;
+    }
+
+    38%, 51%, 72% {
+        transform: translate3d(-2px, 1px, 0);
+        color: white;
+    }
+
+    96%, 63% {
+        transform: translate3d(3px, 1px, 0);
+        color: blue;
+    }
+
+    17%, 78% {
+        transform: translate3d(4px, 2px, 0);
+        color: white;
+    }
+
+    37%, 61% {
+        transform: translate3d(2px, 1px, 0);
+        color: red;
+    }
+}
+
+#header:hover > h1 {
+    animation: shake 1s cubic-bezier(.05, .46, 1, .4) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+#footer {
+    background: #303030;
+    color: #efefef;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    padding: 1em;
+    text-align: center;
+}
+
+#content {
+    padding: 1em;
+}
+
+#menu {
+    background: #ddd;
+    padding: 1em;
+}
+
+#menu a {
+    background: linear-gradient(#ededed, #fff);
+    color: #404040;
+    min-width: 10em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#menu a:hover {
+    background: #fff;
+    box-shadow: 0 0 0.25em 0.1em white;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline-block;
+}
